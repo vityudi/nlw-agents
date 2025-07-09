@@ -3,6 +3,7 @@ import { fastify } from 'fastify'
 import {
   serializerCompiler,
   validatorCompiler,
+  // biome-ignore lint/correctness/noUnusedImports: type ZodError,
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod'
 import { env } from './env.ts'
