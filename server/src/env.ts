@@ -7,6 +7,7 @@ const envSchema = z.object({
     .url()
     .startsWith('postgres://')
     .default('postgres://docker:docker@localhost:5432/agents'),
+  GEMINI_API_KEY: z.string(),
 })
 
 export const env = envSchema.parse(process.env)
